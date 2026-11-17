@@ -2,3 +2,58 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Цвета тёмной темы */
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --title-decor-color: #000028;
+  --section-title-color: #ff0070;
+  --theme-button-color: #ff0070;
+  --corner-color: #ff0070;
+  --cover-image: url('../images/cover-image-dark.png');
+  --rec-display: flex;
+
+  /* Шрифт и текст */
+  --font-family: 'IBM Plex Mono', monospace;
+  --font-size: 18px;
+  --line-height: 1.3;
+  --heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  /* Размеры и отступы */
+  --page-padding: 10px;
+  --screen-min-height: 668px;
+  --content-padding-block: 40px;
+  --sections-gap: 50px;
+  --gallery-gap: 10px;
+  --theme-menu-offset: 65px;
+  --header-description-offset: 56px;
+  --header-description-width: 100%;
+  --rec-offset-inline: 19px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --page-padding: 20px;
+    --screen-min-height: 1024px;
+    --content-padding-block: 60px;
+    --sections-gap: 80px;
+    --gallery-gap: 20px;
+    --theme-menu-offset: 172px;
+    --header-description-offset: 163px;
+    --header-description-width: 364px;
+    --rec-offset-inline: 29px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --screen-min-height: 768px;
+    --theme-menu-offset: 0px;
+    --header-description-offset: 114px;
+    --header-description-width: 491px;
+  }
+}
